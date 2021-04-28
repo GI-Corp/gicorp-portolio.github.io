@@ -35,11 +35,9 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!-- Flickity Carousel -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
 
 </head>
 <body>
@@ -57,11 +55,11 @@
                     
                     <a href="#" class="site-logo"><img src="assets/img/logo.png" alt="logo"></a>
                     
-                    <a class="icon-dark gplus-bg" href="https://www.linkedin.com/in/islom-gulomkodirov-359140208/"><i class="icon-linkedin"></i></a>
-                    <a href="https://github.com/GI-Corp"><img src="assets/img/icons/github-brands.svg" alt="github-icon" style="height: 16px;width:16px;margin: 9px 11px"></a>
-                    <a href="https://www.instagram.com/webgi.corp"><img src="assets/img/icons/instagram-brands.svg" alt="instagram-icon" style="height: 16px;width:16px;margin: 9px 11px"></a>
-                    <a class="icon-dark twitter-bg" href="https://twitter.com/gi_corp"><i class="icon-twitter"></i></a>
-                    <a class="icon-dark linkedin-bg" href="mailto:gicorp.work@gmail.com"><i class="icon-gplus"></i></a>
+                    <a class="icon-dark gplus-bg" href="https://www.linkedin.com/in/islom-gulomkodirov-359140208/" target="_blank"><i class="icon-linkedin"></i></a>
+                    <a href="https://github.com/GI-Corp" target="_blank"><img src="assets/img/icons/github-brands.svg" alt="github-icon" style="height: 16px;width:16px;margin: 9px 11px"></a>
+                    <a href="https://www.instagram.com/webgi.corp" target="_blank"><img src="assets/img/icons/instagram-brands.svg" alt="instagram-icon" style="height: 16px;width:16px;margin: 9px 11px"></a>
+                    <a href="https://t.me/gi_corp" target="_blank"><img src="assets/img/icons/telegram.svg" alt="instagram-icon" style="height: 16px;width:16px;margin: 9px 11px"></a>
+                    <a class="icon-dark twitter-bg" href="https://twitter.com/gi_corp" target="_blank"><i class="icon-twitter"></i></a>
 
                 </div><!-- /.navbar-header -->
 
@@ -72,9 +70,7 @@
                         <li class="page-scroll"><a href="#hero">Home</a></li>
                         <li class="page-scroll"><a href="#about">About</a></li>
                         <li class="page-scroll"><a href="#service">Service</a></li>
-                        <li class="page-scroll"><a href="#portfolio">Portfolio</a></li>
-                        <li class="page-scroll"><a href="#contact">Contact</a></li>
-                        
+                        <li class="page-scroll"><a href="#portfolio">Portfolio</a></li>                        
                     </ul><!-- /.navbar-nav -->
 
                 </div><!-- /.navbar-collapse -->
@@ -91,7 +87,7 @@
                     <h1>G.OV ISLOM</h1>
                     <div class="page-scroll">
                         <p class="job-title">Web Designer & Back-end developer</p>
-                        <a href="#contact" class="btn btn-fill ">Hire me</a>
+                        <a href="mailto:gicorp.work@gmail.com" class="btn btn-fill ">Contact me</a>
                         <div class="clearfix visible-xxs"></div>
                         <a href="#portfolio" class="btn btn-border">My portfolio</a>
                     </div>
@@ -113,8 +109,18 @@
                     <div class="col-md-6 col-md-offset-3">
                         <h2>About</h2>
                         <img src="assets/img/lines.svg" class="img-lines" alt="lines">
-                        <p>Hello! I'm Islom, a web developer, a Python enthusiast, and a guy slighty obsessed for code quality. I’m currently available for freelance work. If you have a project that you want to get started or think you need my help with something, then get in touch.</p>
-                        <a href="https://www.linkedin.com/in/islom-gulomkodirov-359140208/" class="btn btn-fill" target="_blank" download>Download my cv</a>
+                        <h4 class="job-title typewrite" data-period="2000" data-type='[ "Hi, Im Islom.", "Web Designer", "Back-end developer", "Python enthusiast", ""]'>
+                            <span class="wrap"></span>
+                        </h4>
+                        <div class="btn-border" style="padding: 20px;"><p>Hello! I'm Islom, a web developer, a Python enthusiast, and a guy slighty obsessed for code quality and code optimization. I'm passionate about illustrations and drawing.
+                            <br><br> I’m currently available for work/collaboration. If you have a project that you want to get started or think you need my help with something, then get in touch.</p>
+                            <img src="assets/img/python_horizontal_logo_icon_169825.svg" alt="python" style="width: 64;height: 35px;">
+                            <img src="assets/img/django_plain_logo_icon_146558.svg" alt="django" style="width: 127px;height: 90px;">
+                        </div>
+
+                            <br>
+                            <a href="https://www.linkedin.com/in/islom-gulomkodirov-359140208/" class="btn btn-fill" target="_blank" download>Download my cv</a>
+
                     </div>
                 </div>
             </div>
@@ -149,9 +155,9 @@
                             </div><!-- /.progress -->
                         </div><!-- /.skill -->
                         <div class="skill">
-                            <h4>C#</h4>
+                            <h4>Illustrations</h4>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" data-transitiongoal="10"></div><!-- /.progress-bar -->
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="70"></div><!-- /.progress-bar -->
                             </div><!-- /.progress -->
                         </div><!-- /.skill -->
                     </div>
@@ -207,93 +213,24 @@
                             </div>
                             <img src="assets/img/consultancy.svg" alt="Coding">
                             <h4>Optimization</h4>
-                            <p>As well as providing development services, I can also write optimized algorithms via latest techniques.</p>
+                            <p>As well as providing development services, I can also write optimized code considering the time complexity analysis.</p>
                         </div><!-- /.service -->
                     </div>
                 </div>
             </div>
+            <br>
+            <br>
         </section><!-- /.secton-services -->
-
-        <section id="portfolio" class="site-section section-portfolio">
-            <div class="container">
-                <div class="text-center">
-                    <h3>My recent Works</h3>
-                    <img src="assets/img/lines.svg" class="img-lines" alt="lines">
-                </div>
-                <div class="row">
-                    <div class="col-md-4 col-xs-6">
-                        <div class="portfolio-item">
-                            <img src="assets/img/Portfolio-1.jpg" class="img-res" alt="">
-                            <div class="portfolio-item-info">
-                                <h4>Project Management</h4>
-                                <a href="#" data-toggle="modal" data-target="#portfolioItem1"><span class="glyphicon glyphicon-eye-open"></span></a>
-                                <a href="http://projectmanager.pythonanywhere.com/"><span class="glyphicon glyphicon-link"></span></a>
-                            </div><!-- /.portfolio-item-info -->
-                        </div><!-- /.portfolio-item -->
-                    </div>
-                    <div class="col-md-4 col-xs-6">
-                        <div class="portfolio-item">
-                            <img src="assets/img/Portfolio-2.jpg" class="img-res" alt="">
-                            <div class="portfolio-item-info">
-                                <h4>BT Real Estate</h4>
-                                <a href="#" data-toggle="modal" data-target="#portfolioItem2"><span class="glyphicon glyphicon-eye-open"></span></a>
-                                <a href="http://gicorp.pythonanywhere.com/"><span class="glyphicon glyphicon-link"></span></a>
-                            </div><!-- /.portfolio-item-info -->
-                        </div><!-- /.portfolio-item -->
-                    </div>
-                    <div class="col-md-4 col-xs-6">
-                        <div class="portfolio-item">
-                            <img src="assets/img/webmagi-portfolio-design.jpg" class="img-res" alt="">
-                            <div class="portfolio-item-info">
-                                <h4>Portfolio Web-Design</h4>
-                                <a href="#" data-toggle="modal" data-target="#portfolioItem3"><span class="glyphicon glyphicon-eye-open"></span></a>
-                                <a href="https://jollyrojer1512.github.io/WebMAGI/"><span class="glyphicon glyphicon-link"></span></a>
-                            </div><!-- /.portfolio-item-info -->
-                        </div><!-- /.portfolio-item -->
-                    </div>
-                    <div class="col-md-4 col-xs-6">
-                        <div class="portfolio-item">
-                            <img src="assets/img/Portfolio-sketch.png" class="img-res" alt="">
-                            <div class="portfolio-item-info">
-                                <h4>Portfolio Web-Design</h4>
-                                <a href="#" data-toggle="modal" data-target="#portfolioItem4"><span class="glyphicon glyphicon-eye-open"></span></a>
-                                <a href="#"><span class="glyphicon glyphicon-link"></span></a>
-                            </div><!-- /.portfolio-item-info -->
-                        </div><!-- /.portfolio-item -->
-                    </div>
-                    <div class="col-md-4 col-xs-6">
-                        <div class="portfolio-item">
-                            <img src="assets/img/Sign Up Screen Design  PNG.png" class="img-res" alt="">
-                            <div class="portfolio-item-info">
-                                <h4>Mobile App Design</h4>
-                                <a href="#" data-toggle="modal" data-target="#portfolioItem5"><span class="glyphicon glyphicon-eye-open"></span></a>
-                                <a href="#"><span class="glyphicon glyphicon-link"></span></a>
-                            </div><!-- /.portfolio-item-info -->
-                        </div><!-- /.portfolio-item -->
-                    </div>
-                    <div class="col-md-4 col-xs-6">
-                        <div class="portfolio-item">
-                            <img src="assets/img/Journey in Night PNG.png" class="img-res" alt="">
-                            <div class="portfolio-item-info">
-                                <h4>Art Illustration</h4>
-                                <a href="#" data-toggle="modal" data-target="#portfolioItem6"><span class="glyphicon glyphicon-eye-open"></span></a>
-                                <a href="#"><span class="glyphicon glyphicon-link"></span></a>
-                            </div><!-- /.portfolio-item-info -->
-                        </div><!-- /.portfolio-item -->
-                    </div>
-                </div>
-            </div>
-        </section><!-- /.secton-portfolio -->
 
         <section class="site-section section-counters text-center">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-4 col-xs-12">
-                        <p class="counter start" data-to="1.5" data-speed="2000">0</p>
+                        <p class="counter start" data-to="1" data-speed="2000">0</p>
                         <h4>Years Experience</h4>
                     </div>
                     <div class="col-sm-4 col-xs-12">
-                        <p class="counter start" data-to="8" data-speed="2000">0</p>       
+                        <p class="counter start" data-to="9" data-speed="2000">0</p>       
                         <h4>Projects Delivered</h4>      
                     </div>
                     <div class="col-sm-4 col-xs-12">
@@ -304,6 +241,171 @@
             </div>
         </section><!-- /.section-counters -->
 
+        <section id="portfolio" class="site-section section-portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h3>My recent Works</h3>
+                    <img src="assets/img/lines.svg" class="img-lines" alt="lines">
+                </div>
+                <div class="text-center">
+                    <p><b>Software | Web development</b></p>
+                    <hr>
+                </div>
+                <!-- Flickity HTML init -->
+                    <div class="carousel" data-flickity='{ "fullscreen": true, "autoPlay": 1800, "pauseAutoPlayOnHover": false }'>
+                        <div class="carousel-cell portfolio-item"><img src="/assets/img/works/pm.webp" alt="orange tree" /></a>                            
+                                <div class="portfolio-item-info">
+                                    <h4>projectManagement</h4>
+                                    <p>Project Management Tool for automation and digitalization of development processes.
+                                    </p>
+                                    <h5>HTML, CSS, JavaScript | Python, Django, PostgreSQL.</h5>
+                                    <br>
+                                    <a href="https://github.com/GI-Corp/projectManagement" target="_blank"><span class="btn-contact-div">Learn more</span></a>
+                                </div>
+                        </div>
+                        <div class="carousel-cell portfolio-item"><img src="/assets/img/works/bt-real-estate.webp" alt="orange tree" /></a>                            
+                                <div class="portfolio-item-info">
+                                    <h4>BT Real Estate project</h4>
+                                    <p>Marketplace dedicated to sell or buy real estate by empowering consumers with data, and connecting them with the best local professionals who can help.
+                                    </p>
+                                    <h5>CRUD, Dashboard, Queries</h5>
+                                    <br>
+                                    <a href="https://github.com/GI-Corp/real_estate_project" target="_blank"><span class="btn-contact-div">Learn more</span></a>
+                                </div>
+                        </div>
+                        <div class="carousel-cell portfolio-item"><img src="/assets/img/works/task-management.webp" alt="orange tree" /></a>                            
+                                <div class="portfolio-item-info">
+                                    <h4>Tasks-manager
+                                    </h4>
+                                    <p>Simple task manager app on Django with import/export functionality.
+                                    </p>
+                                    <h5><ul>
+                                        <li>Register/Login page
+                                        </li>
+                                        <li>Dashboard</li>
+                                        <li>Import/export feature (different formats)
+                                        </li>
+                                            <ul><li>JSON, Excel, CSV..</li></ul>
+                                    </ul></h5>
+                                    <br>
+                                    <a href="https://github.com/GI-Corp/real_estate_project" target="_blank"><span class="btn-contact-div">Learn more</span></a>
+                                </div>
+                        </div>
+                        <div class="carousel-cell portfolio-item"><img src="/assets/img/works/sockets.webp" alt="orange tree" /></a>                            
+                                <div class="portfolio-item-info">
+                                    <h4>TCP Socket Programming 
+                                    </h4>
+                                    <p>A pair of client-server calculator app using TCP sockets.
+                                    </p>
+                                    <h5>Client sends data, the server accepts & sends back.
+                                    </h5>
+                                    <br>
+                                    <a href="https://github.com/GI-Corp/tcp_sockets_calculator_app" target="_blank"><span class="btn-contact-div">Learn more</span></a>
+                                </div>
+                        </div>
+                    </div>
+
+            </div>
+
+            <br>
+            <br>
+            <div class="container">
+                <div class="text-center">
+                    <p><b>Web design & Illustrations</b></p>
+                    <hr>
+                </div>
+                <!-- Flickity HTML init -->
+                    <div class="carousel" data-flickity='{ "fullscreen": true, "autoPlay": 2200, "pauseAutoPlayOnHover": false }'>
+                        <div class="carousel-cell portfolio-item carousel-image"><img src="/assets/img/works/arts/webmagi-portfolio-design.webp" alt="orange tree" /></a>                            
+                                <div class="portfolio-item-info">
+                                    <h4>webmagi-portfolio-design</h4>
+                                    <br>
+                                    <a href="/assets/img/works/arts/webmagi-portfolio-design.webp" target="_blank"><span class="btn-contact-div">View Full Image</span></a>
+                                </div>
+                        </div>
+                        <div class="carousel-cell portfolio-item carousel-image"><img src="/assets/img/works/arts/2D Landscape PNG.webp" alt="orange tree" /></a>                            
+                                <div class="portfolio-item-info">
+                                    <h4>Landscape</h4>
+                                    <br>
+                                    <a href="/assets/img/works/arts/2D Landscape PNG.webp" target="_blank"><span class="btn-contact-div">View Full Image</span></a>
+                                </div>
+                        </div>
+                        <div class="carousel-cell portfolio-item carousel-image"><img src="/assets/img/works/arts/Sign Up Screen Design  PNG.webp" alt="orange tree" /></a>                            
+                                <div class="portfolio-item-info">
+                                    <h4>Sign Up Screen Design </h4>
+                                    <br>
+                                    <a href="/assets/img/works/arts/Sign Up Screen Design  PNG.webp" target="_blank"><span class="btn-contact-div">View Full Image</span></a>
+                                </div>
+                        </div>
+                        <div class="carousel-cell portfolio-item carousel-image"><img src="/assets/img/works/arts/MyPortfolio.webp" alt="orange tree" /></a>                            
+                                <div class="portfolio-item-info">
+                                    <h4>Portfolio web design </h4>
+                                    <br>
+                                    <a href="/assets/img/works/arts/MyPortfolio.webp" target="_blank"><span class="btn-contact-div">View Full Image</span></a>
+                                </div>
+                        </div>
+                        <div class="carousel-cell portfolio-item carousel-image"><img src="/assets/img/works/arts/iExamLogo.webp" alt="orange tree" /></a>                            
+                                <div class="portfolio-item-info">
+                                    <h4>iExam Channel Logo </h4>
+                                    <br>
+                                    <a href="/assets/img/works/arts/iExamLogo.webp" target="_blank"><span class="btn-contact-div">View Full Image</span></a>
+                                </div>
+                        </div>
+                        <div class="carousel-cell portfolio-item carousel-image"><img src="/assets/img/works/arts/Journey in Night PNG.webp" /></a>                            
+                                <div class="portfolio-item-info">
+                                    <h4>Journey in Night </h4>
+                                    <br>
+                                    <a href="/assets/img/works/arts/Journey in Night PNG.webp" target="_blank"><span class="btn-contact-div">View Full Image</span></a>
+                                </div>
+                        </div>
+                        <div class="carousel-cell portfolio-item carousel-image"><img src="/assets/img/works/arts/Journey on the Train PNG.webp" alt="journey"/></a>                            
+                                <div class="portfolio-item-info">
+                                    <h4>Journey on the Train </h4>
+                                    <br>
+                                    <a href="/assets/img/works/arts/Journey on the Train PNG.webp" target="_blank"><span class="btn-contact-div">View Full Image</span></a>
+                                </div>
+                        </div>
+                        <div class="carousel-cell portfolio-item carousel-image"><img src="/assets/img/works/arts/Low Poly Art PNG.webp" alt="journey"/></a>                            
+                                <div class="portfolio-item-info">
+                                    <h4>Low Poly Art </h4>
+                                    <br>
+                                    <a href="/assets/img/works/arts/Low Poly Art PNG.webp" target="_blank"><span class="btn-contact-div">View Full Image</span></a>
+                                </div>
+                        </div>
+                        <div class="carousel-cell portfolio-item carousel-image"><img src="/assets/img/works/arts/Mountains PNG.webp" alt="journey"/></a>                            
+                                <div class="portfolio-item-info">
+                                    <h4>Mountains </h4>
+                                    <br>
+                                    <a href="/assets/img/works/arts/Mountains PNG.webp" target="_blank"><span class="btn-contact-div">View Full Image</span></a>
+                                </div>
+                        </div>
+                        <div class="carousel-cell portfolio-item carousel-image"><img src="/assets/img/works/arts/Night in Mountains.webp" alt="journey"/></a>                            
+                                <div class="portfolio-item-info">
+                                    <h4>Night in Mountains </h4>
+                                    <br>
+                                    <a href="/assets/img/works/arts/Night in Mountains.webp" target="_blank"><span class="btn-contact-div">View Full Image</span></a>
+                                </div>
+                        </div>
+                        <div class="carousel-cell portfolio-item carousel-image"><img src="/assets/img/works/arts/The Dark Forest.webp" alt="journey"/></a>                            
+                                <div class="portfolio-item-info">
+                                    <h4>The Dark Forest </h4>
+                                    <br>
+                                    <a href="/assets/img/works/arts/The Dark Forest.webp" target="_blank"><span class="btn-contact-div">View Full Image</span></a>
+                                </div>
+                        </div>
+                        <div class="carousel-cell portfolio-item carousel-image"><img src="/assets/img/works/arts/Poison in Glass PNG.webp" alt="journey"/></a>                            
+                                <div class="portfolio-item-info">
+                                    <h4>Poison in Glass </h4>
+                                    <br>
+                                    <a href="/assets/img/works/arts/Poison in Glass PNG.webp" target="_blank"><span class="btn-contact-div">View Full Image</span></a>
+                                </div>
+                        </div>
+
+                        </div>
+                    </div>
+
+            </div>
+        </section><!-- /.secton-portfolio -->
 
                 <!-- <section id="portfolio" class="site-section section-portfolio" style="padding-bottom: 0%;">
             <div class="container">
@@ -346,157 +448,26 @@
             </div>
         </section> -->
 
-        <section id="contact" class="site-section section-form text-center">
-            <div class="container">
-
-                <h3>Contact</h3>
-                <img src="assets/img/lines.svg" class="img-lines" alt="lines">
-                <form>
-                     <div class="btn-contact-div">
-                        <a href="https://t.me/gi_corp" class="btn btn-border btn-contact" type="submit">Telegram <span class="glyphicon glyphicon-send"></span></a>
-                        <a href="https://www.instagram.com/webgi.corp/" class="btn btn-border btn-contact" type="submit">Instagram <span class="glyphicon glyphicon-send"></span></a>
-                    </div>
-                </form>
-            </div>
-        </section><!-- /.section-form -->
-
-    </main><!-- /#main -->
-
-    <footer id="colophon" class="site-footer">
+    <section id="about" class="site-section section-about text-center">
         <div class="container">
             <div class="row">
-                <div class="col-sm-4 col-xs-12">
-                    <a class="icon facebook-bg" href="#"><i class="icon-facebook"></i></a>
-                    <a class="icon twitter-bg" href="#"><i class="icon-twitter"></i></a>
-                    <a class="icon gplus-bg" href="#"><i class="icon-linkedin"></i></a>
-                    <a class="icon linkedin-bg" href="#"><i class="icon-gplus"></i></a>
-                </div>
-                <div class="col-sm-4 col-sm-offset-0 col-xs-6 col-xs-offset-3"><p class="copyright">Copyright 2020. Developed by <a href="https://github.com/GI-Corp"><b>GI.Corp</b></a></p></div>
-                <div class="col-sm-4 col-xs-3">
-                    <div class="text-right page-scroll">
-                        <a class="icon icon-up-bg" href="#hero"><i class="icon-up"></i></a>
+                <span href="#" class="btn btn-border"></span>
+                <a href="mailto:gicorp.work@gmail.com" class="btn btn-fill ">Contact me</a>
+                <span href="#" class="btn btn-border"></span>
+                <br>
+                <br>
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="page-scroll">
+                        <h5>Site by | &copy; 2020</h5>
+                        <h5><b>ISLOM GULOMKODIROV</b></h5>
+                        <hr>
                     </div>
                 </div>
             </div>
         </div>
-    </footer><!-- /#footer -->
+    </section><!-- /.secton-footer -->
 
-    <!-- Modals -->
-    <div id="portfolioItem1" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
-            <img class="img-res full-image-site" src="assets/img/pm.PNG" alt="">
-          </div>
-          <div class="modal-body">
-            <h4 class="modal-title">Project Management</h4>
-            <p>Project Management PM is a web based application to automate workflow and increase productivity of staff.</p>
-              <p><b>Fully operable web application with:</b></p>
-              <p>· Front-end: HTML, CSS, JS</p>
-              <p>· Back-end: Python, Django, Jinja</p>
-              <p>· Database: MySQL/Postgresql</p>
-          </div>
-          <div class="modal-footer">
-            <a href="http://projectmanager.pythonanywhere.com/" class="btn btn-fill">Visit Page</a>
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
-    <div id="portfolioItem2" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
-            <img class="img-res full-image-site" src="assets/img/bt-real.JPG" alt="">
-          </div>
-          <div class="modal-body">
-            <h4 class="modal-title">BT Real Estate</h4>
-            <p>BT Real Estate shows off product catalogue to your potential customers by special Bowthemes filter module. This is elegant and flexible solution for real estates, vacation rentals, automotive sale with 6 colors options and responsive layout.</p>
-             <p><b>Fully operable web application with:</b></p>
-              <p>· Front-end: HTML, CSS, JS</p>
-              <p>· Back-end: Python, Django, Jinja</p>
-              <p>· Database: MySQL/Postgresql</p>
-            </div>
-          <div class="modal-footer">
-            <a href="http://gicorp.pythonanywhere.com/" class="btn btn-fill">Visit Page</a>
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
-    <div id="portfolioItem3" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
-            <img class="img-res full-image" src="assets/img/webmagi-portfolio-design.jpg" alt="">
-          </div>
-          <div class="modal-body">
-            <h4 class="modal-title">Portfolio Web-site/Web-design</h4>
-            <p>There are three responses to a piece of design — yes, no, and WOW! Wow is the one to aim for.</p>
-          </div>
-          <div class="modal-footer">
-            <a href="https://jollyrojer1512.github.io/WebMAGI/" class="btn btn-fill">Visit Page</a>
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
-    <div id="portfolioItem4" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
-            <img class="img-res full-image" src="assets/img/Portfolio-sketch.png" alt="">
-          </div>
-          <div class="modal-body">
-            <h4 class="modal-title">Portfolio Web-Design</h4>
-            <p>Great web design without functionality is like a sports car with no engine.</p>
-          </div>
-          <div class="modal-footer">
-            <a href="assets/img/Portfolio-sketch.png" class="btn btn-fill">View Image</a>
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
-    <div id="portfolioItem5" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
-            <img class="img-res full-image" src="assets/img/Sign Up Screen Design  PNG.png" alt="">
-          </div>
-          <div class="modal-body">
-            <h4 class="modal-title">Design for Mobile App</h4>
-            <p>The rich and interactive experiences we have come to expect on mobile apps have created new standards and expectations for all digital media including the web. The result is websites are evolving to become more app-like in their rich functionality.</p>
-          </div>
-          <div class="modal-footer">
-            <a href="assets/img/Sign Up Screen Design  PNG.png" class="btn btn-fill">View Image</a>
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
-    <div id="portfolioItem6" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <a class="close" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span></a>
-            <img class="img-res full-image" src="assets/img/Journey in Night PNG.png" alt="" >
-          </div>
-          <div class="modal-body">
-            <h4 class="modal-title">Night Journey on NYC Bridge.</h4>
-            <p>Creative thinking inspires ideas, ideas inspire change.</p>
-          </div>
-          <div class="modal-footer">
-            <a href="assets/img/Journey in Night PNG.png" class="btn btn-fill">View Image</a>
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+    </main><!-- /#main -->
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -508,6 +479,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-progressbar/0.9.0/bootstrap-progressbar.min.js"></script>
     <script src="assets/js/jquery.countTo.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <!-- Flickity Carousel -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
   
 </body>
 </html>
